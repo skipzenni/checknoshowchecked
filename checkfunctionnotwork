@@ -1,0 +1,14 @@
+CREATE TABLE Employee
+(
+EmployeeId INT PRIMARY KEY ,
+Name varchar(20),
+Salary Numeric( 18,2 ),
+Gender Char( 1),
+Age    INT CHECK  (AGE >= 18)
+);
+
+there i use check for age mush >=18
+but after i input age under 18 error message no show up, why?
+
+INSERT INTO Employee   (EmployeeId, Name, Salary , Gender, Age)   
+Values ( 100, 'Niraj', 67000.00 , 'M' , 17);
